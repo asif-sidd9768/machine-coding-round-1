@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./HighlightedString.css"
 
 export const HighlightedString = ({ text, substring="" }) => {

@@ -1,4 +1,4 @@
-import { useContext } from "react"
+import { useContext, useEffect } from "react"
 import { BookContext } from "../../main"
 import { BookCard } from "../../components/BookCard/BookCard";
 
@@ -10,10 +10,14 @@ const categories = [
   { id:3, key: "read", value: "Read" }
 ];
 
-
 export const HomePage = () => {
-  const { booksState } = useContext(BookContext)
+  const { booksState, booksDispatch } = useContext(BookContext)
   const filterBooks = filterKey => booksState.books.filter(({status}) => status === filterKey)
+
+  useEffect(() => {
+    booksDispatch({type:"SET_SEARCH_PARAM", payload: ""})
+  }, [])
+
   return (
     <div className="books-container">
       {
