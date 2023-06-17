@@ -1,0 +1,39 @@
+.book-card-container {
+  display: grid;
+  grid-template-rows: 1fr auto auto auto;
+  margin: 1.5rem 0 0 0;
+}
+
+.book-card-image {
+  max-width: 60%;
+  margin: 0 auto;
+  box-shadow: 0 0 4px rgba(0,0,0,0.6);
+}
+
+.book-card-title {
+  font-weight: 600;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.book-card-author {
+  color: #666666;
+  margin: 0.1rem 0;
+  font-size: 0.9rem;
+}
+
+.book-card-status-menu {
+  padding: 8px 10px;
+  margin: 0.5rem 0 0 0;
+  background: none;
+  border: none;
+  background-color: #666666;
+  border-radius: 8px;
+  color: beige;
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+@media screen and (width >= 576px) {
+  .book-card-image {
+    margin: 0;
+  }
+}

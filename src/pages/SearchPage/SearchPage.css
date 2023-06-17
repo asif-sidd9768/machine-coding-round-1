@@ -1,0 +1,46 @@
+.search-page-header {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.search-page-back-btn {
+  font-size: 1.7rem;
+  margin: 0 1rem 0 0;
+  cursor: pointer;
+}
+
+.search-page-input {
+  padding: 8px;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+.search-page-input:focus{
+  border-bottom: 1px solid #666666;
+}
+
+.search-books-list {
+  padding: 1rem 3rem;
+}
+
+.empty-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 0 0;
+}
+
+.empty-search-container p:nth-child(1){
+  font-size: 1.2rem;
+  color: #666666;
+}
+
+.empty-search-container p:nth-child(2){
+  font-size: 1rem;
+  color: #999999;
+  margin: 0.5rem 0 0 0;
+}

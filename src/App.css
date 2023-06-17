@@ -1,0 +1,20 @@
+.search-button {
+  text-decoration: none;
+  float: right;
+  margin: 1rem 2rem 1rem 1rem;
+  color: black;
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.search-button:hover {
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+.search-img {
+  max-width: 20px;
+  margin: 0 0.3rem 0 0;
+}
